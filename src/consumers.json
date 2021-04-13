@@ -1,0 +1,22 @@
+{
+    "data": [
+        {
+            "id": "",
+            "apigeeName": "",
+            "name": "Name",
+            "developerEmail": "mail",
+            "subscriptions": [
+                {
+                    "id": "id",
+                    "productName": "*",
+                    "environment": "production",
+                    "status": "pending",
+                    "customClientIdentification": "",
+                    "questionToDeveloper": "",
+                    "answerFromDeveloper": ""
+                },
+                {}
+            ]
+        }
+    ]
+}

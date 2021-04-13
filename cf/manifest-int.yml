@@ -1,0 +1,10 @@
+---
+applications:
+  - name: calls-report
+    health-check-type: none
+    memory: 256M
+    buildpacks:
+      - nodejs_buildpack
+    routes:
+      - route: calls-report.****.net
+      - route: calls-report.apps.internal

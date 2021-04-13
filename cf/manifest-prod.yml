@@ -1,0 +1,16 @@
+---
+applications:
+  - name: calls-report
+    health-check-type: none
+    memory: 128M
+    disk_quota: 256M
+    instances: 1
+    buildpacks:
+      - nodejs_buildpack
+    stack: cflinuxfs3
+    routes:
+      - route: calls-report.*****.net
+      - route: calls-report.apps.internal
+    env:
+      no_proxy: '*.****.net, .****.net, localhost, .internal, sso-int.****.com,
+      sso.*****.com, .*****.net, git.*****.com'
